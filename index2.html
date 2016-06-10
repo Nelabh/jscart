@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app = "myModule">
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link href="custom.css" rel="stylesheet" >
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src = "script.js"></script>
+</head>
+
+
+<body ng-controller = "myController">
+  	<div id="sidebar">
+  	<div id="col1">
+  		<h3>Side navbar</h3>
+
+
+  		
+  	</div>
+  
+  	<div id="col2">
+
+
+  
+  	</div>
+  
+  	<div id="sidebar-resizer1" 
+  		resizer="vertical" 
+  		resizer-width="2" 
+  		resizer-left="#col1" 
+  		resizer-right="#col2"
+  		resizer-max="1400">
+  	</div>
+
+
+
+  	</div>
+  
+  	<div id="content">
+
+  		<div id="top-content">Top content <p>{{content}}</p></div>
+
+  
+  	</div>
+  
+  	<div id="sidebar-resizer" 
+  		resizer="vertical" 
+  		resizer-width="2" 
+  		resizer-left="#sidebar" 
+  		resizer-right="#content"
+  		resizer-max="1400">
+  	</div>
+</body>
+</html>
